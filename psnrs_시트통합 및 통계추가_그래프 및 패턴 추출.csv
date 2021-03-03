@@ -1,0 +1,28 @@
+,,,,,,,,,
+bestcount,10,20,30,40,50,60,70,80,90
+mf,0,0,0,0,0,0,0,0,0
+amf,0,0,0,0,0,0,0,0,0
+namf,0,0,0,0,0,0,0,0,0
+proposed1,8,9,12,14,8,1,0,0,0
+proposed2,41,41,38,32,20,4,0,0,0
+proposed3,0,0,0,0,0,0,0,0,1
+proposed4,0,0,0,0,0,0,1,1,46
+proposed5,3,2,2,6,24,47,51,51,5
+,52,52,52,52,52,52,52,52,52
+,,,,,,,,,
+MF: opencv api,,,,,,,,,
+AMF: NAMF의 Step1에 해당하는 내용 구현 (논문 구현 Code 파이썬 포팅),,,,,,,,,
+NAMF: NAMF 논문 Step1 + Step2 (논문 구현 Code 파이썬 포팅),,,,,,,,,
+Proposed1 : AMF+거리 기반 weighted sum,,,,,,,,,
+Proposed2 : Proposed1 + bilateral,,,,,,,,,
+Proposed3 : namf + 거리 기반 weighted sum + bilateral,,,,,,,,,
+Proposed4 : proposed3 + 자신 weight 포함,,,,,,,,,
+Proposed5 : Proposed1 + pixel 신뢰도 weight average,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Psap<50,,Proposed2,,,,,,,
+,,,,,,,,,
+50<=Psap<85,,Proposed5,,RWMF,,,,,
+,,,,,,,,,
+Psap>=85,,Proposed4,,,,,,,
